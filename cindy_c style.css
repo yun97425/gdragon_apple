@@ -1,3 +1,11 @@
 .header{
-    background-color: aqua;
+    background-color: rgb(62, 167, 88);
+}
+
+#education{
+    background-color: rgb(133, 48, 179);
+}
+
+div{
+    color: rgb(177, 21, 21);
 }
