@@ -1,3 +1,134 @@
 .header{
     background-color: rgb(179, 216, 251);
 }
+*{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.red-test,
+.red {color: #ff0000;}
+
+.blue .blue-test{color: #002fff;}
+
+.green.green-test{color: #43da7d;}
+.yellow-test{color: #ffef3a;}
+#pink{color: #ff8bff;}
+
+.rain{
+    background: linear-gradient(to right,rgb(240, 180, 180),rgb(255, 202, 102),rgb(254, 254, 169))
+}
+
+.my-btn {
+  background-color: rgb(255, 210, 127); /* 背景 */
+  /* background-image: url(./cattt.jpg); */
+  /*background-size: contain ; /* 保留整張圖 */
+  background-size: cover ; /* 覆蓋整個圖 */
+  /* background-repeat: no-repeat;
+  background-position: center;*/
+  text-align: center; /* 文字水平置中 */
+  vertical-align: middle; /* 文字垂直置中 */
+  /* padding: 10px; 內距 */
+  /* padding-top: 15px; */
+  /* padding: 15px 10px 5px 20px; 上 右 下 左 */
+  padding: 50px 60px; /* 上下 左右 */
+  margin: 10px; /* 外距 */
+  border-radius: 100%; /* 圓角 */
+  font-weight: 1000; /* 字體粗細 */
+  width: 100px; /* 寬度 */
+  /* height: 100px; 高度 */
+  box-shadow: 2px 2px 2px 2px gray; /* 陰影 */
+  /* margin: 0 auto; */
+  color: azure;
+  border: 4px dotted #fd34db;
+  /* border-width: 8px;
+  border-color: #fd345f;
+  border-style: solid; */
+  /* border-style: ; */
+}
+
+.my-btn:hover{
+ background-color: #fdffb6;
+/*偽類選擇器hover移過去*/
+}
+
+.my-btn:active{
+    background-color: #9ffbb3;
+    box-shadow 2px 2px 2px 2px gray;
+/*偽類選擇器actionc點下去*/
+}
+
+.note{
+    position: absolute;
+    /* 絕對位置 網頁最上方左上角為(o,o) */
+    position: relative;
+
+    position: absolute;
+    position: absolute;
+    position: fixed; 
+    /* 滑到哪裡左上角是(o,o) */
+}
+
+.message {
+  padding: 9px 12px;
+  border: rgb(255, 50, 122) solid 1px;
+  border-radius: 10px;
+  background-color: #ff7ca3;
+  border-radius: 20px; /* 圓角 */
+  color: white;
+  display: inline-block;
+  /* position: absolute;
+  position: relative; */
+  position: fixed;
+  top: 10px;
+  /* bottom: 10px; */
+  right: 10px;
+  transition: all 2s ease-in-out;
+}
+
+.message:after {
+  content: "🐧";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 1rem;
+  color: rgb(252, 48, 38);
+}
+
+.message:hover {
+padding: 15px 20px;
+
+border-radius: 35px; 
+opacity: 0;
+}
+
+.message.move {
+  right: 50%;
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #f1b5db;
+  position: relative;
+  overflow: hidden;
+  /* 超出box會消失 */
+}
+
+.box-center {
+  display: inline-block;
+  background-color: #fb9595;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.5rem;
+}
+.box-sizing: border-box
+
+ .triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  }
