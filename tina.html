@@ -8,19 +8,19 @@
     <!--連結css設定，更新npx到網頁看，要強制清除快取-->
   </head>
   <body>
-    <h1 class="header">Welcome to Tina's Page</h1>
+    <h1 class="gradient">Welcome to Tina's Page</h1>
     <img
       width="100%"
       src="./banner.jpg"
       alt="banner"
     /><!--width改變寬度可用百分比也可以自訂px-->
-    <p class="content">This is a new HTML file.</p>
+    <p class="green">This is a new HTML file.</p>
     <a href="https://www.npmjs.com/" target="_blank">Visit NPM</a
     ><!--網頁超連結，target輸入顯示於網頁的文字-->
   </body>
   <body>
-    <h4>如何開始製作網站</h4>
-    <p>遵循以下步驟以創建自己的網站：</p>
+    <h4 class="green">如何開始製作網站</h4>
+    <p id="pink">遵循以下步驟以創建自己的網站：</p>
     <ol>
       <li>選擇一個域名。</li>
       <li>選擇一個網頁託管服務。</li>
@@ -82,7 +82,7 @@
             placeholder="請輸入PWD"
           /><!--PWD在輸入時，數字不會顯示在螢幕-->
           <button type="submit">送出</button>
-          <div>
+          <div class="red">
             製作勾選，你會了嗎？
             <label><input type="checkbox" />是</label>
             <label><input type="checkbox" />否</label>
@@ -93,12 +93,12 @@
             <label><input type="checkbox" name="orange" />橘子</label>
           </div>
           <div>
-            備註
-            <textarea name="" id=""></textarea>
+            <span>備註</span>
+            <textarea name="id"></textarea>
           </div>
           <div>
             國家
-            <select name="country" id="">
+            <select name="country">
               <option value="taiwan">台灣</option>
               <option value="japan">日本</option>
               <option value="usa">美國</option>
@@ -108,5 +108,36 @@
         </form>
       </table>
     </main>
+  </body>
+  <body>
+    <h1>css效果</h1>
+    <div class="my-btn">Click Me!</div>
+    <div class="circle">圓圈效果</div>
+    <div
+      class="message"
+      data-count="10"
+      onclick="this.classList.toggle('move')"
+    >
+      message
+    </div>
+    <div class="box">
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div class="box-center">center</div>
+    </div>
+    <div class="flex-box">
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+    </div>
   </body>
 </html>
