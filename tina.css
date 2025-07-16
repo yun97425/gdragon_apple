@@ -1,11 +1,10 @@
 .header {
-  background-color: #585858;
+  background-color: #c8c8c8;
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
     color: #ececec;
 }
-<!--.是class選擇器，＃是id選擇器-->
 
 .content {
   font-family: Arial, sans-serif;
