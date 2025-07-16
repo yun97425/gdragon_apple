@@ -1,0 +1,161 @@
+.header {
+  background-color: rgb(187, 233, 253); /* 淺藍背景，適合放在頁首 header 區塊 */
+}
+
+.apple {
+  background-color: rgb(253, 243, 187); /* 淺黃色背景，像蘋果的感覺 🍎 */
+}
+
+* {
+  font-size: 1.5rem; /* 所有元素的文字大小設定為 1.5 倍（基準字體大小） */
+}
+
+.red-text,
+.red {
+  color: red; /* 同時給 class="red-text" 和 class="red" 設定紅色文字 */
+}
+
+.blue .blue-text {
+  color: blue; /* 在 class="blue" 的元素裡，如果裡面還有 .blue-text，就設定為藍色文字 */
+}
+
+.green.green-text {
+  color: green; /* 同時擁有 .green 和 .green-text 這兩個 class 的元素才會變成綠色文字 */
+}
+
+.rainbow-linear-gradient {
+  /* 漸層背景，像彩虹一樣由左到右變色 🌈 */
+  background: linear-gradient(
+    to right /* 從左到右做漸層 */,
+    rgb(225, 169, 169) /* 粉紅色 */,
+    rgb(233, 210, 169) /* 米黃色 */,
+    rgb(236, 236, 149) /* 淡黃色 */,
+    rgb(176, 243, 176) /* 淡綠色 */,
+    rgb(124, 212, 242) /* 淡藍色 */,
+    rgb(211, 160, 248) /* 淡紫色 */,
+    rgb(249, 187, 249) /* 淡粉紫色 */
+  );
+}
+.my-btn {
+  width: 100px; /* 設定按鈕寬度 */
+  height: 100px; /* 設定按鈕高度（和寬一樣才能做成圓） */
+  border-radius: 50%; /* 將按鈕變成圓形 */
+
+  background: url(./三八.jpg) center no-repeat; /* 背景圖片：置中、不重複 */
+  background-size: cover; /* 背景圖填滿整個按鈕，會裁切部分圖 */
+
+  display: flex; /* 使用 flex 排版，讓文字可以置中 */
+  align-items: center; /* 垂直置中 */
+  justify-content: center; /* 水平置中 */
+
+  font-weight: bold; /* 字體加粗 */
+  color: white; /* 文字顏色白色 */
+  text-shadow: 1px 1px 2px black; /* 加陰影讓字更清楚、顯眼 */
+  font-size: 0.9rem; /* 文字大小設定 */
+
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* 陰影讓按鈕有立體感 */
+  cursor: pointer; /* 滑鼠移到上面會變小手，代表可點 */
+
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* 動畫設定：滑過去時放大＋陰影變化會有滑順過渡感 */
+
+  overflow: hidden; /* 避免內容超出按鈕圓形邊界 */
+
+  border-width: 2px; /* 邊框寬度 */
+  border-style: dashed; /* 邊框樣式：虛線 */
+  border-color: rgb(240, 179, 232); /* 邊框顏色：粉紫色 */
+}
+
+.my-btn:hover {
+  transform: scale(1.1); /* 滑鼠滑過時按鈕會放大 1.1 倍 */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  /* 滑過時陰影變得更明顯（更立體） */
+}
+.circle {
+  border-radius: 50%; /* 圓形關鍵 */
+  display: flex;
+  align-items: center; /* 垂直置中 */
+  justify-content: center; /* 水平置中 */
+}
+
+.big {
+  width: 200px;
+  height: 200px;
+  background: #a0c4ff;
+  margin-left: 200px;
+  /* ✅ 方法一：用 margin-left 把同心圓整組往右推 200px */
+  margin-left: 200px;
+
+  /* ✅ 方法二（可選）：整組置中畫面（左右自動外距） */
+  /* margin: 0 auto; */
+
+  /* ✅ 方法三（可選）：靠右邊對齊 */
+  /* margin-left: auto;
+     margin-right: 0; */
+
+  /* ✅ 方法四（進階）：固定在右下角不動 */
+  /* position: fixed;
+     bottom: 20px;
+     right: 20px; */
+}
+
+.mid {
+  width: 130px;
+  height: 130px;
+  background: #ffc6ff;
+}
+
+.small {
+  width: 60px;
+  height: 60px;
+  background: #fdffb6;
+}
+
+.message {
+  padding: 6px 10px;
+  background-color: rgba(203, 246, 192, 0.9); /* 淺綠背景 */
+  color: white;
+  font-weight: bold; /* 讓文字變粗體 */
+  position: fixed; /* 固定在畫面上的某個位置，捲動頁面時不會移動 */
+  top: 10px; /* 距離畫面最上方 10px */
+  right: 10px; /* 距離畫面最右邊 10px */
+  z-index: 1000; /* 確保它蓋在最上層 */
+  border-radius: 10px; /* 圓角 */
+  transition: all 0.5s ease-in-out; /* 所有變化有動畫效果 */
+}
+
+.message::after {
+  content: "❤️"; /* 要顯示的文字或圖示 */
+  position: absolute; /* 絕對定位：相對於最近的 position: relative 元素 */
+  top: -5px; /* 向上移動 5px */
+  right: -5px; /* 向右移動 5px */
+  font-size: 0.5rem; /* 文字大小縮小一半 */
+  color: rgb(224, 144, 144); /* 粉紅色的文字 */
+}
+
+.message:hover {
+  opacity: 0;
+  transform: scale(1.1); /* 滑鼠移上去放大 1.1 倍 */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); /* 陰影變大，看起來更立體 */
+  border-radius: 35px;
+}
+.message.move {
+  right: 50%; /* 改變位置：到畫面中間 */
+  transform: translateX(50%); /* 再往右推一點，完全置中 */
+  opacity: 0; /* 消失（透明） */
+}
+.dog-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 100px;
+  background: url("臘腸狗_去背.png") no-repeat center/contain;
+  z-index: 999;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.dog-message:hover {
+  transform: scale(1.1);
+}

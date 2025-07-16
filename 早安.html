@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume - Yingfanglan</title>
+    <link rel="stylesheet" href="./lan.css" />
   </head>
   <body>
     <header style="text-align: center">
-      <h1>yingfanglan</h1>
-      <p>我的履歷</p>
+      <h1 class="header">
+        <center>Yingfanglan</center>
+      </h1>
+      <p class="apple">我的履歷</p>
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/500px-Cat_August_2010-4.jpg"
         alt="貓咪照片"
@@ -23,7 +26,7 @@
     </header>
 
     <main style="padding: 20px">
-      <h3>專長</h3>
+      <h3 class="green green-text">專長</h3>
       <ul>
         <li>貓咪</li>
         <li>小狗</li>
@@ -34,8 +37,13 @@
         <span>我是藍</span>
       </p>
 
+      <p>
+        我喜歡 <span style="color: red">貓咪</span> 和
+        <span style="color: blue">狗狗</span>。
+      </p>
+
       <div>
-        <h3>學歷</h3>
+        <h3 class="rainbow-linear-gradient">學歷</h3>
         <ul>
           <li>文藻外語大學 <small>2018–2022</small></li>
         </ul>
@@ -93,7 +101,23 @@
             <option value="TW">美國</option>
           </select>
         </div>
-        <button>送出</button>
+        <button class="my-btn"></button>
+        <div class="circle big">
+          <div class="circle mid">
+            <div class="circle small"></div>
+          </div>
+          <div class="box">
+            <div class="box-center">我是中心</div>
+          </div>
+          <div
+            class="message"
+            data-count="10"
+            onclick="this.classList.toggle('move')"
+          >
+            通知
+          </div>
+          <div class="dog-message"></div>
+        </div>
       </form>
     </main>
   </body>
